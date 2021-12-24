@@ -3,17 +3,17 @@ import Card from "../components/Card/Card";
 import {AppContext} from "../App";
 
 const Main = () => {
-    const {tours} = useContext(AppContext)
+    const {refits} = useContext(AppContext)
 
-    if (!tours.length) {
+    if (!refits.length) {
         return  (
             <div>...Loading</div>
         )
     }
     return (
         <div>
-            <h1>Tours</h1>
-            {tours.map((card) => {
+            <h1>Услуги предприятия</h1>
+            {refits.map((card) => {
                 return (
                     <Card key={card.id} card={card}/>
                 )

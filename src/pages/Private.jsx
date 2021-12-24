@@ -3,7 +3,7 @@ import {AppContext} from "../App";
 import Login from "./Login";
 
 const Private = () => {
-    const {isAuth, tours} = useContext(AppContext)
+    const {isAuth, refits} = useContext(AppContext)
 
     if (!isAuth) {
         return (
@@ -11,19 +11,19 @@ const Private = () => {
         )
     }
 
-    const tourId = localStorage.getItem('tourId')
+    const refitId = localStorage.getItem('refitId')
     const name = localStorage.getItem('name')
     const phone = localStorage.getItem('phone')
 
-    if (tourId && name && phone) {
-        const tour = tours.find(tour => tour.id == tourId)
+    if (refitId && name && phone) {
+        const refit = refits.find(refit => refit.id == refitId)
         return (
             <div>
                 <h2>Top Secret</h2>
                 <div>
                     <h3>{name}</h3>
                     <p>{phone}</p>
-                    <span>{tour.title}</span>
+                    <span>{refit.title}</span>
                 </div>
             </div>
         );

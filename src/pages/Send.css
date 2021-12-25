@@ -1,0 +1,25 @@
+
+.application_form {
+    /*background: white;*/
+    padding: 24px;
+    display: block;
+    background: lightgrey;
+    width: 576px;
+    height: 280px;
+    border: 2px;
+    border-color: none;
+    border-style: solid;
+    border-radius: 10px;
+    z-index: 1;
+    /*position: absolute;*/
+    /*justify-content: center;*/
+    margin: auto;
+    /*align-content: center;*/
+    margin-top: 10%;
+}
+
+/*button {*/
+/*    margin-right: auto;*/
+/*    margin-left: auto;*/
+/*    ma*/
+/*}*/

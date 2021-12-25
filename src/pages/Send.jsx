@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useParams} from "react-router-dom";
+import './Send.css'
 
 const Send = () => {
     const {refitId} = useParams()
@@ -15,20 +16,44 @@ const Send = () => {
 
     return (
         <form onSubmit={sendUserData}>
-            <h1>Заявка</h1>
-            <input type="text"
-                   required
-                   value={phone}
-                   onChange={(e) => setPhone(e.target.value)}
-                   placeholder="phone"/>
-            <input type="text"
-                   required
-                   value={name}
-                   onChange={(e) => setName(e.target.value)}
-                   placeholder="name"/>
-            <button type="submit">Оставить мои данные</button>
+
+
+            <div class="application_form">
+                <h2>Заявка на услугу</h2>
+                <div className="form__input">
+                    <label for="text">Укажите номер Вашего телефона для уточнения заказа</label>
+                    <input type="text"
+                           required
+                           value={phone}
+                           onChange={(e) => setPhone(e.target.value)}
+                           placeholder="укажите номер телефона"/>
+                </div>
+                <div className="form__input">
+                    <label htmlFor="text">Для оформления заказа необходимо указать Ваше имя</label>
+                    <input type="text"
+                           required
+                           value={name}
+                           onChange={(e) => setName(e.target.value)}
+                           placeholder="введите имя"/>
+                </div>
+                    <button className="form__button" type="submit">Оставить мои данные</button>
+
+            </div>
         </form>
     );
 };
 
 export default Send;
+
+// было внутри тега form
+// <input type="text"
+//        required
+//        value={phone}
+//        onChange={(e) => setPhone(e.target.value)}
+//        placeholder="укажите номер телефона"/>
+// <input type="text"
+//        required
+//        value={name}
+//        onChange={(e) => setName(e.target.value)}
+//        placeholder="введите имя"/>
+// <button type="submit">Оставить мои данные</button>

@@ -10,13 +10,16 @@ const Main = () => {
             <div>...Loading</div>
         )
     }
+
     return (
         <div>
-            <h1>Услуги предприятия</h1>
+            <h2>Услуги предприятия</h2>
             {refits.map((card) => {
                 return (
+                    // <Card key={card.id} card={card}/>
                     <Card key={card.id} card={card}/>
                 )
+
             })}
         </div>
     );

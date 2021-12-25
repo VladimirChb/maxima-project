@@ -3,7 +3,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import {AppContext} from "../App";
 
 const Refit = () => {
-    const {refits: refits} = useContext(AppContext)
+    const {refits} = useContext(AppContext)
     let navigate = useNavigate();
     let {id} = useParams();
 
@@ -20,7 +20,6 @@ const Refit = () => {
     return (
         <div>
             <h2>Услуга</h2>
-
             <div className="card">
                 {/*<img src={'https://travelmamas.com/wp-content/uploads/2020/04/first_state_usa_square.jpg'} width={100}/>*/}
                 {/*<img src={'https://travelmamas.com/wp-content/uploads/2020/04/first_state_usa_square.jpg'} width={100}/>*/}
@@ -29,8 +28,19 @@ const Refit = () => {
                 <span>{refit.price}р</span>
                 <button onClick={() => navigate(`/send/${id}`)}>Оставить заявку</button>
             </div>
+
         </div>
     );
 };
 
 export default Refit;
+
+// От услуги до div
+// <div className="card">
+//     {/*<img src={'https://travelmamas.com/wp-content/uploads/2020/04/first_state_usa_square.jpg'} width={100}/>*/}
+//     {/*<img src={'https://travelmamas.com/wp-content/uploads/2020/04/first_state_usa_square.jpg'} width={100}/>*/}
+//     <h2>{refit.title}</h2>
+//     <p>{refit.description}</p>
+//     <span>{refit.price}р</span>
+//     <button onClick={() => navigate(`/send/${id}`)}>Оставить заявку</button>
+// </div>

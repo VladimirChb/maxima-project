@@ -2,6 +2,8 @@ import React, {useContext} from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import {AppContext} from "../../App";
 import './Navigation.css'
+// import IndexPage from "../components/IndexPage/Indexpage";
+
 
 const Navigation = () => {
     const {isAuth, setIsAuth} = useContext(AppContext)
@@ -12,10 +14,15 @@ const Navigation = () => {
                 <div className="logo">
                     <img src={process.env.PUBLIC_URL + 'cheboksary_small.png'} alt={"logo"}/>
                 </div>
-                <h1>ООО "Электросетевая компания"</h1>
+                    <h1>ООО "Электросетевая компания"</h1>
+                {/*<div className="link">*/}
+                {/*    <Link to="/">главная страница</Link>*/}
+                {/*</div>*/}
                 <div className="link">
-                    <Link to="/">главная страница</Link>
+                    <Link to="/main">главная страница</Link>
                 </div>
+
+
                 <div className="link">
                     <Link to="/refit">услуги предприятия</Link>
                 </div>

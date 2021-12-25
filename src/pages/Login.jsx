@@ -61,7 +61,7 @@ const Login = () => {
    {/*Вариант 3*/}
             <form action="POST" className="form" onSubmit="handleLogin()">
    {/*             <form onSubmit={handleLogin}>*/}
-                <h1 className="form__title">Регистрация</h1>
+                <h2 className="form__title">Личный кабинет</h2>
                 <div className="registration_form">
                     <div className="form__input">
                         <label htmlFor="email">Введие логин (email)</label>
@@ -87,7 +87,7 @@ const Login = () => {
                     {/*<span>error</span>*/}
                 </div>
 
-                <button className="form__button" type="submit">Регистрация</button>
+                <button className="form__button" type="submit">Вход в личный кабинет</button>
 
 
             </form>

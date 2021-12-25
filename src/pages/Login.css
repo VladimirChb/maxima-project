@@ -1,4 +1,7 @@
 /** {*/
+
+/*}*/
+/** {*/
 /*    margin: 0;*/
 /*    padding: 0;*/
 /*    !*box-sizing: border-box;*!*/
@@ -21,7 +24,7 @@
     display: block;
     background: lightgrey;
     width: 576px;
-    height: 400px;
+    height: 350px;
     border: 2px;
     border-color: none;
     border-style: solid;
@@ -52,7 +55,7 @@
     position: absolute;
     left: -10px;
     top: 40%;
-    content: "*";
+    /*content: "*";*/
 }
 
 .form__input > label {
@@ -83,7 +86,7 @@
     position: absolute;
     left: -10px;
     bottom: 20%;
-    content: "*";
+    /*content: "*";*/
 }
 
 .form__button {
@@ -99,18 +102,24 @@
 
 }
 
-.error-before::before {
-    color: red;
+h2 {
+    text-align: center;
+    /*margin: auto;*/
+    /*justify-content: center;*/
 }
 
-.error-color {
-    color: red !important;
-}
+/*.error-before::before {*/
+/*    color: red;*/
+/*}*/
 
-.error-border {
-    border: 2px solid red !important;
-}
+/*.error-color {*/
+/*    color: red !important;*/
+/*}*/
 
-.error {
-    opacity: 1 !important;
-}
+/*.error-border {*/
+/*    border: 2px solid red !important;*/
+/*}*/
+
+/*.error {*/
+/*    opacity: 1 !important;*/
+/*}*/

@@ -4,5 +4,32 @@
     padding: 2px;
     margin: 100px;
     box-shadow: 3px 3px 4px 40px gray;
+    position: relative;
+    background-color: white;
+    /*border-radius: 6px;*/
+    /*display: flex;*/
+    flex-direction: column;
+    /*align-items: stretch;*/
+    /*align-content: space-between;*/
+    /*align-self: flex-end;*/
 
 }
+.card__button {
+    float: right;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    margin-bottom: 0px;
+}
+
+
+
+/*image {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+
+/*}*/
+
+/*div {*/
+/*    margin-bottom: 5px;*/
+/*}*/

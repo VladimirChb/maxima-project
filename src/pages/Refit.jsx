@@ -25,7 +25,7 @@ const Refit = () => {
                 {/*<img src={'https://travelmamas.com/wp-content/uploads/2020/04/first_state_usa_square.jpg'} width={100}/>*/}
                 <h2>{refit.title}</h2>
                 <p>{refit.description}</p>
-                <span>{refit.price}р</span>
+                <span> цена услуги от {refit.price} рублей</span>
                 <button onClick={() => navigate(`/send/${id}`)}>Оставить заявку</button>
             </div>
 

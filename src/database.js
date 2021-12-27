@@ -6,9 +6,6 @@ export let cards = [
         price: 1500,
         image: <img src={'http://www.mrsk-1.ru/bitrix/templates/mrsk/images/customers/additionalIcons/additional-icon2-hover.png'} width={100}/>
 
-        // image: 'https://drive.google.com/file/d/1gQVzmT0DLjIb6-HxHzBeXlYD0ov3UxTM/view?usp=sharing';
-        // image: "http://drive.google.com/uc?export=view&id=1gQVzmT0DLjIb6-HxHzBeXlYD0ov3UxTM/view?usp=sharing"
-        // image: "logo192.png",
     },
     {
         id: 2,

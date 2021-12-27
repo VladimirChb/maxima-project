@@ -13,8 +13,10 @@ const Card = ({card}) => {
             <div>{image}</div>
             <h3>{title}</h3>
             {/*<p>{description}</p>*/}
-
-            <button onClick={() => navigate(`/refit/${id}`)}>Перейти</button>
+            <div>
+            <button className="card__button" type="submit"onClick={() => navigate(`/refit/${id}`)} >Перейти</button>
+            </div>
+            {/*<button onClick={() => navigate(`/refit/${id}`)}>Перейти</button>*/}
         </div>
     )
 }

@@ -7,7 +7,6 @@ import Private from "./pages/Private";
 import {createContext, useEffect, useState} from "react";
 import {cards} from "./database";
 import Send from "./pages/Send";
-// import IndexPage from "./components/IndexPage/IndexPage";
 
 
 export const AppContext = createContext(null)
